@@ -20,13 +20,4 @@ public class CustomView extends ConstraintLayout {
 
     LayoutInflater.from(context).inflate(R.layout.view_custom, this, true);
   }
-
-  @Override protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-    int width = MeasureSpec.getSize(widthMeasureSpec);
-    int height = MeasureSpec.getSize(heightMeasureSpec);
-    int size = Math.min(width, height);
-    widthMeasureSpec = MeasureSpec.makeMeasureSpec(size, MeasureSpec.EXACTLY);
-    heightMeasureSpec = MeasureSpec.makeMeasureSpec(size, MeasureSpec.EXACTLY);
-    super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-  }
 }

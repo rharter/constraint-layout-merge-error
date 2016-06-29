@@ -9,9 +9,14 @@
     android:orientation="vertical"
     tools:context="com.ryanharter.constraintlayouttest.MainActivity">
 
-  <android.support.v7.widget.RecyclerView
-      android:id="@+id/list"
+  <com.ryanharter.constraintlayouttest.CustomView
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      />
+      android:layout_height="wrap_content"
+      android:layout_weight="1" />
+
+  <com.ryanharter.constraintlayouttest.MergedCustomView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1" />
+
 </LinearLayout>
